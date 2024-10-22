@@ -148,6 +148,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 77.488px; /* 100% */
+
+        @media (width <= 1310px) {
+          font-size: 64px;
+        }
       }
 
       h2 {
@@ -158,6 +162,10 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: 1.12px;
+
+        @media (width <= 1310px) {
+          font-size: 45px;
+        }
       }
 
       .btnContainer {
@@ -192,8 +200,26 @@
       }
     }
 
+    footer {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #d8d8d8;
+      font-family: "Bazinga!", sans-serif;
+      font-size: 27px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.08px;
+    }
+
     @media (width <= 1000px) {
       display: none;
+    }
+
+    @media (width <= 1310px) {
+      grid-template-columns: 1fr 0.8fr;
     }
   }
 }
