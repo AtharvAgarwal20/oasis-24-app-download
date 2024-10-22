@@ -59,6 +59,10 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+
+      @media (width <= 1000px) and (height > 730px) {
+        font-size: 48px;
+      }
     }
 
     .phones {
@@ -67,6 +71,11 @@
 
       @media (width <= 1000px) and (height <= 639px) {
         width: 200px;
+      }
+
+      @media (width <= 1000px) and (height > 730px) {
+        height: 50%;
+        width: auto;
       }
     }
 
@@ -79,6 +88,10 @@
       line-height: normal;
       letter-spacing: 0.5px;
       text-align: center;
+
+      @media (width <= 1000px) and (height > 730px) {
+        font-size: 32px;
+      }
     }
 
     .btnContainer {
@@ -86,10 +99,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      height: 20%;
 
-      @media (width <= 1000px) and (height <= 564px) {
-        height: 20%;
-      }
+      //   @media (width <= 1000px) and (height <= 564px) {
+      //   }
 
       button {
         aspect-ratio: 160.14 / 57.193;
