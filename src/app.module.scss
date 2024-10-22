@@ -1,0 +1,34 @@
+@mixin backgroundCommonStyles() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background {
+  @include backgroundCommonStyles();
+  object-fit: cover;
+  z-index: -2;
+}
+
+.backgroundGradient {
+  @include backgroundCommonStyles();
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    #000 0.25%,
+    rgba(0, 0, 0, 0.8) 34.08%,
+    rgba(0, 0, 0, 0.3) 99.76%
+  );
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .phones {
+    width: 20%;
+  }
+}
