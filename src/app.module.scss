@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     h1 {
       color: #f4b54c;
@@ -62,7 +63,11 @@
 
     .phones {
       aspect-ratio: 281.7 / 293.58;
-      width: 100%;
+      width: 280px;
+
+      @media (width <= 1000px) and (height <= 639px) {
+        width: 200px;
+      }
     }
 
     h2 {
@@ -82,6 +87,10 @@
       align-items: center;
       justify-content: space-between;
 
+      @media (width <= 1000px) and (height <= 564px) {
+        height: 20%;
+      }
+
       button {
         aspect-ratio: 160.14 / 57.193;
         border: none;
@@ -91,7 +100,6 @@
           0px 11.38px 17.587px 0px rgba(0, 0, 0, 0.06),
           0px 4.727px 7.305px 0px rgba(0, 0, 0, 0.04),
           0px 1.71px 2.642px 0px rgba(0, 0, 0, 0.03);
-
         height: 45%;
 
         img {
