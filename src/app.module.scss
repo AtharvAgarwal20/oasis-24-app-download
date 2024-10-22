@@ -40,13 +40,17 @@
   justify-content: center;
   align-items: center;
 
-  .content {
+  .mobileContent {
     height: 90%;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (width > 1000px) {
+      display: none;
+    }
 
     h1 {
       color: #f4b54c;
@@ -60,7 +64,7 @@
       font-weight: 400;
       line-height: normal;
 
-      @media (width <= 1000px) and (height > 730px) {
+      @media (height > 730px) {
         font-size: 48px;
       }
     }
@@ -69,11 +73,11 @@
       aspect-ratio: 281.7 / 293.58;
       width: 280px;
 
-      @media (width <= 1000px) and (height <= 639px) {
+      @media (height <= 639px) {
         width: 200px;
       }
 
-      @media (width <= 1000px) and (height > 730px) {
+      @media (height > 730px) {
         height: 50%;
         width: auto;
       }
@@ -89,7 +93,7 @@
       letter-spacing: 0.5px;
       text-align: center;
 
-      @media (width <= 1000px) and (height > 730px) {
+      @media (height > 730px) {
         font-size: 32px;
       }
     }
@@ -119,6 +123,77 @@
           width: 80%;
         }
       }
+    }
+  }
+
+  .desktopContent {
+    display: grid;
+    height: fit-content;
+    width: 80%;
+    grid-template-columns: 1fr 0.9fr;
+
+    .left {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h1 {
+        color: #f4b54c;
+        text-shadow: 5.812px 3.874px 0px #000;
+        -webkit-text-stroke-width: 0.9686018824577332;
+        -webkit-text-stroke-color: #212121;
+        font-family: "Bazinga!", sans-serif;
+        font-size: 77.488px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 77.488px; /* 100% */
+      }
+
+      h2 {
+        color: #fff;
+        font-family: "Bazinga!", sans-serif;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.12px;
+      }
+
+      .btnContainer {
+        display: flex;
+        height: 13%;
+        gap: 20px;
+
+        button {
+          aspect-ratio: 160.14 / 57.193;
+          border: none;
+          border-radius: 4.575px;
+          background: #fff;
+          box-shadow: 0px 37.747px 58.337px 0px rgba(0, 0, 0, 0.08),
+            0px 11.38px 17.587px 0px rgba(0, 0, 0, 0.06),
+            0px 4.727px 7.305px 0px rgba(0, 0, 0, 0.04),
+            0px 1.71px 2.642px 0px rgba(0, 0, 0, 0.03);
+          height: 100%;
+
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .phones {
+      width: 100%;
+      margin: auto;
+
+      @media (height < 900px) {
+        width: 80%;
+      }
+    }
+
+    @media (width <= 1000px) {
+      display: none;
     }
   }
 }

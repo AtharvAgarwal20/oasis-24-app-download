@@ -13,7 +13,7 @@ function App() {
     <>
       <ImagePreloader imageUrls={imagePreloadArray}>
         <div className={styles.container}>
-          <div className={styles.content}>
+          <div className={styles.mobileContent}>
             <h1>ENTIRE FEST AT YOUR FINGERTIPS!</h1>
             <img
               src={imagePreloadArray[1]}
@@ -29,6 +29,28 @@ function App() {
                 <img src={imagePreloadArray[3]} alt="android download button" />
               </button>
             </div>
+          </div>
+          <div className={styles.desktopContent}>
+            <div className={styles.left}>
+              <h1>ENTIRE FEST AT YOUR FINGERTIPS!</h1>
+              <h2>DOWNLOAD THE APP NOW</h2>
+              <div className={styles.btnContainer}>
+                <button>
+                  <img src={imagePreloadArray[2]} alt="apple download button" />
+                </button>
+                <button>
+                  <img
+                    src={imagePreloadArray[3]}
+                    alt="android download button"
+                  />
+                </button>
+              </div>
+            </div>
+            <img
+              src={imagePreloadArray[1]}
+              alt="phones"
+              className={styles.phones}
+            />
           </div>
         </div>
         <div className={styles.backgroundGradient}></div>
