@@ -108,7 +108,7 @@
       //   @media (width <= 1000px) and (height <= 564px) {
       //   }
 
-      button {
+      a {
         aspect-ratio: 160.14 / 57.193;
         border: none;
         border-radius: 4.575px;
@@ -118,6 +118,9 @@
           0px 4.727px 7.305px 0px rgba(0, 0, 0, 0.04),
           0px 1.71px 2.642px 0px rgba(0, 0, 0, 0.03);
         height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
           width: 80%;
@@ -173,7 +176,7 @@
         height: 13%;
         gap: 20px;
 
-        button {
+        a {
           aspect-ratio: 160.14 / 57.193;
           border: none;
           border-radius: 4.575px;
@@ -183,6 +186,9 @@
             0px 4.727px 7.305px 0px rgba(0, 0, 0, 0.04),
             0px 1.71px 2.642px 0px rgba(0, 0, 0, 0.03);
           height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           img {
             width: 80%;

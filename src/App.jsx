@@ -22,12 +22,15 @@ function App() {
             />
             <h2>DOWNLOAD THE APP NOW</h2>
             <div className={styles.btnContainer}>
-              <button>
+              <a target="_blank">
                 <img src={imagePreloadArray[2]} alt="apple download button" />
-              </button>
-              <button>
+              </a>
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=org.bitsdvm.bitsoasis"
+              >
                 <img src={imagePreloadArray[3]} alt="android download button" />
-              </button>
+              </a>
             </div>
           </div>
           <div className={styles.desktopContent}>
@@ -35,15 +38,18 @@ function App() {
               <h1>ENTIRE FEST AT YOUR FINGERTIPS!</h1>
               <h2>DOWNLOAD THE APP NOW</h2>
               <div className={styles.btnContainer}>
-                <button>
+                <a target="_blank">
                   <img src={imagePreloadArray[2]} alt="apple download button" />
-                </button>
-                <button>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=org.bitsdvm.bitsoasis"
+                >
                   <img
                     src={imagePreloadArray[3]}
                     alt="android download button"
                   />
-                </button>
+                </a>
               </div>
             </div>
             <img
